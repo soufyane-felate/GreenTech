@@ -33,8 +33,24 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    
 
 }
+
+
+
+.firstsection h3
+{
+    color: white;
+    text-shadow: 1px 1px rgb(7, 7, 7);
+    font-weight: bold;
+    margin-left: 20px;
+   font-size: 20px;
+
+}
+
+
+
 .secondsection{
     width: 450;
     display: flex;
@@ -43,6 +59,7 @@ header{
     gap: 20px;
 
 }
+
 .secondsection a{
     color: white;
     text-decoration: none;
