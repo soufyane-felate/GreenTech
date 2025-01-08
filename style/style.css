@@ -3,10 +3,7 @@
     margin: 0;
 }
 body{
-    background-image: url('../assets/images/pexels-celine-3776818-30063037.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   
 
 }
 
@@ -17,7 +14,11 @@ main{
     justify-content: start;
     align-items: center;
     text-align: center;
-    height:600px;
+    height:500px;
+    background-image: url('../assets/images/pexels-celine-3776818-30063037.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main img{
@@ -88,3 +89,47 @@ h1{
     font-size: large;
 
 }
+.Decouvrez{
+    background-color: rgb(31, 136, 19);
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 90px;
+    color: white;
+    
+}
+.Decouvrez:hover{
+    color: aliceblue;
+    background-color: rgb(17, 67, 17);
+}
+.Service_title h1{
+    text-align: center;
+    color:  rgb(31, 136, 19);
+}
+.services{
+    background-color: #e8e8e8;
+
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px ;
+
+}
+.card img{
+    width: 250px;
+    height: 220px;
+  
+
+}
+.img2,.img3,.img1{
+    border-radius: 25px;
+    background-color: white;
+    gap: 10px;
+}
+.img1 h4,.img2 h4,.img3 h4{
+    text-align: center;
+    margin: 30px;
+}
+
