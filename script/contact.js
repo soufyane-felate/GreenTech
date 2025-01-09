@@ -72,7 +72,7 @@ function sendForm() {
     const submitButton = document.querySelector('.btn');
 
     submitButton.onclick = function (event) {
-        event.preventDefault(); // Prevent default form submission
+      //  event.preventDefault();
         const isNameValid = verifyName();
         const isEmailValid = verifyEmail();
         const isSubjectValid = verifySubject();
@@ -81,6 +81,7 @@ function sendForm() {
         if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
             alert('Form submitted successfully');
         } else {
+           
             alert('Please correct the errors in the form before submitting.');
         }
     };
