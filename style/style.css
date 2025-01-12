@@ -1,166 +1,110 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-   
+@import url(components/footer.css);
+@import url(components/header.css);
+@import url(utils/reset.css);
 
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    height:500px;
-    background-image: url('../assets/images/pexels-celine-3776818-30063037.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  background-image: url("../assets/images/pexels-celine-3776818-30063037.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-main img{
-    width: 100%;
-    height: 100%;
-
+main img {
+  width: 100%;
+  height: 100%;
 }
 
-
-header{
-    display: flex;
-    background-color: rgb(31, 136, 19);
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    
-
+h1 {
+  font-size: 50px;
 }
-
-
-
-.firstsection h3
-{
-    color: white;
-    text-shadow: 1px 1px rgb(7, 7, 7);
-    font-weight: bold;
-    margin-left: 20px;
-   font-size: 20px;
-
+.First {
+  margin-top: 100px;
 }
-
-
-
-.secondsection{
-    width: 450;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 12px;
-    gap: 20px;
-
+.First h1 {
+  font-weight: bold;
+  font-size: 90px;
+  color: rgb(223, 214, 214);
+  text-shadow: 2px 5px rgb(0, 0, 0);
 }
-
-.secondsection a{
-    color: white;
-    text-decoration: none;
+.First p {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(4, 4, 4);
+  font-weight: bold;
+  font-size: large;
 }
-.firstsection{
-    padding: 8px 15px;
+.Decouvrez {
+  background-color: rgb(31, 136, 19);
+  width: 170px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 90px;
+  color: white;
 }
-h1{
-    font-size: 50px;
+.Decouvrez:hover {
+  color: aliceblue;
+  background-color: rgb(17, 67, 17);
 }
-.First{
-    margin-top: 100px;
-
+.Service_title h1 {
+  text-align: center;
+  color: #3a8530;
 }
-.First h1{
- font-weight: bold;
- font-size: 90px;
- color: rgb(223, 214, 214);
- text-shadow: 2px 5px rgb(0, 0, 0);
-
+.services {
+  background-color: #e8e8e8;
+  height: 500px;
 }
-.First p{
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px rgb(4, 4, 4);
-    font-weight: bold;
-    font-size: large;
-
+.card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
 }
-.Decouvrez{
-    background-color: rgb(31, 136, 19);
-    width: 170px;
-    height: 40px;
-    border-radius: 25px;
-    border: none;
-    margin-top: 90px;
-    color: white;
-    
+.card img {
+  width: 200px;
+  height: 250px;
 }
-.Decouvrez:hover{
-    color: aliceblue;
-    background-color: rgb(17, 67, 17);
+.img2,
+.img3,
+.img1 {
+  border-radius: 25px;
+  background-color: white;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
 }
-.Service_title h1{
-    text-align: center;
-    color: #3A8530;
-    
+.img1 h4,
+.img2 h4,
+.img3 h4 {
+  text-align: center;
+  margin: 20px;
 }
-.services{
-    background-color: #e8e8e8;
-    height: 500px;
-
+.Lastpart {
+  background-color: #d9d9d9;
+  height: 300px;
+  text-align: center;
 }
-.card{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 80px ;
-    
-
+.contact {
+  color: #3a8530;
 }
-.card img{
-    width: 200px;
-    height: 250px;
-  
-
+.caption2 {
+  color: rgb(1, 1, 1);
 }
-.img2,.img3,.img1{
-    border-radius: 25px;
-    background-color: white;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
+.Envoyer {
+  background-color: rgb(31, 136, 19);
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 90px;
+  color: white;
 }
-.img1 h4,.img2 h4,.img3 h4{
-    text-align: center;
-    margin: 20px;
-}
-.Lastpart{
-    background-color: #D9D9D9;
-    height: 300px;
-    text-align: center;
-
-    
-}
-.contact{
-    color: #3A8530;
-}
-.caption2{
-    color: rgb(1, 1, 1);
-}
-.Envoyer{
-    background-color: rgb(31, 136, 19);
-    width: 180px;
-    height: 40px;
-    border-radius: 25px;
-    border: none;
-    margin-top: 90px;
-    color: white;
-   
-}
-.Envoyer:hover{
-    color: aliceblue;
-    background-color: rgb(17, 67, 17);
+.Envoyer:hover {
+  color: aliceblue;
+  background-color: rgb(17, 67, 17);
 }
