@@ -4,6 +4,40 @@ body{
     background-color: aliceblue;
 
 }
+header {
+    display: flex;
+    background-color: rgb(31, 136, 19);
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.firstsection h3 {
+    color: white;
+    text-shadow: 1px 1px rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.secondsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondsection a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.secondsection a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
 .navbar{
     display: flex ;
     justify-content: space-between;
@@ -129,5 +163,58 @@ justify-content: center;
     color: #666;
 }
 
+.footer 
+{
+    background-color: rgb(31, 136, 19);
+     padding: 20px 0; 
+     text-align: center; 
+} 
+.footer .social-icons 
+{
+     margin: 20px 0;
+} 
+    .footer .social-icons a 
+{
+     margin: 0 10px; 
+     color: white;
+    text-decoration: none;
+     font-size: 24px; }
+    .footer .menu 
+    { 
+        display: flex; 
+        justify-content: end;
+        flex-wrap: wrap; 
+        margin-bottom: 20px; }
+    .footer .menu div 
+    { margin: 0 20px; } 
+    .footer .menu div h4
+    { margin-bottom: 10px;
+        color: white;
+
+    }
+    .footer .menu div a 
+    {
+    display: block;
+    color: white; 
+    text-decoration: none; 
+    margin: 5px 0;
+    } 
+    .footer .copyright
+    {
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-top: 10px; 
+    margin-top: 20px; 
+    }
+    .fab
+    {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .dis
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+ 
 
 
