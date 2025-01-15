@@ -87,9 +87,6 @@ function sendForm() {
     };
 }
 
-//date 
-date.innerHTML=new Date().getFullYear();
-//const now = new Date(); date.innerHTML = `${now.toDateString()} ${now.toLocaleTimeString()}`;
 
 // Attach input event listeners
 nom.addEventListener('input', verifyName);
