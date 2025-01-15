@@ -6,10 +6,12 @@ const sujet_m = document.getElementById('sujet_m');
 const cs = document.getElementById('cs');
 const message = document.getElementById('message');
 const cm = document.getElementById('cm');
+const date = document.getElementById('date');
 
 // Function to check name format
+
 function verifyName() {
-    let regex = /^[A-Za-z0-9]{3,}$/;
+    const regex = /^[A-Za-z0-9]{3,}$/;
 
     if (nom.value.trim() === '') {
         cn.innerHTML = '*obligatoire';
@@ -24,7 +26,7 @@ function verifyName() {
 
 // Function to check email format
 function verifyEmail() {
-    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (email.value.trim() === '') {
         ce.innerHTML = '*obligatoire';
@@ -39,7 +41,7 @@ function verifyEmail() {
 
 // Function to check subject format
 function verifySubject() {
-    let regexSubject = /^[A-Za-z0-9\s]{5,}$/;
+    const regexSubject = /^[A-Za-z0-9\s]{5,}$/;
 
     if (sujet_m.value.trim() === '') {
         cs.innerHTML = '*obligatoire';
@@ -54,7 +56,7 @@ function verifySubject() {
 
 // Function to check message format
 function verifyMessage() {
-    let regexMessage = /^[A-Za-z0-9\s]{10,}$/;
+    const regexMessage = /^[A-Za-z0-9\s]{10,}$/;
 
     if (message.value.trim() === '') {
         cm.innerHTML = '*obligatoire';
@@ -72,19 +74,22 @@ function sendForm() {
     const submitButton = document.querySelector('.btn');
 
     submitButton.onclick = function (event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
         const isNameValid = verifyName();
         const isEmailValid = verifyEmail();
         const isSubjectValid = verifySubject();
         const isMessageValid = verifyMessage();
 
         if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
-            alert('Form submitted successfully');
-        } else {
-            alert('Please correct the errors in the form before submitting.');
-        }
+           // alert('Form submitted successfully');
+         
+        } 
     };
 }
+
+//date 
+date.innerHTML=new Date().getFullYear();
+//const now = new Date(); date.innerHTML = `${now.toDateString()} ${now.toLocaleTimeString()}`;
 
 // Attach input event listeners
 nom.addEventListener('input', verifyName);
