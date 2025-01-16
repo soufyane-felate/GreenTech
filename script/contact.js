@@ -81,7 +81,7 @@ function sendForm() {
         const isMessageValid = verifyMessage();
 
         if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
-           // alert('Form submitted successfully');
+           alert('Form submitted successfully');
          
         } 
     };

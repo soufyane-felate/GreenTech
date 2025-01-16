@@ -14,3 +14,6 @@ function send() {
 Array.from(Envoyer).forEach((el)=>{
     el.addEventListener('click',send);
 })
+
+
+
